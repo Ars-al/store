@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section class="bg-color page-3">
+        <div class="container">
+            <div class="row justify-content-center p-3 p-lg-0">
+                <div class="col-lg-4 page-2-col position-r">
+                    <div class="icon-div mt-0">
+                        <a href="javascript:history.back()"><i class="fa-solid fa-arrow-left fs-5 a-color2"></i></a>
+                    </div>
+                    <div class="mt-0">
+                        <h1 class="mb-0 a-color2 fs-4 fw-700">Registro</h1>
+                        <p class="mb-1 a-color2 mt-1 fs-7 fw-500">Completa tus datos para registrar.</p>
+                    </div>
+                    <div>
+                        <div class="mb-2 pt-2">
+                            <label for="exampleFormControlInput1"
+                                class="form-label mb-0 fw-600 fs-7 a-color2">RUT</label>
+                            <input type="text" class="form-control my-select pi-input" id="exampleFormControlInput1"
+                                placeholder="12345678">
+                        </div>
+                        <div class="mb-2">
+                            <label for="exampleFormControlInput1"
+                                class="form-label mb-0  fw-600 fs-7 a-color2">Nombre</label>
+                            <input type="text" class="form-control my-select pi-input" id="exampleFormControlInput1"
+                                placeholder="Ejemplo de nombre">
+                        </div>
+                        <div class="mb-2">
+                            <label for="exampleFormControlInput1"
+                                class="form-label mb-0  fw-600 fs-7 a-color2">Correo</label>
+                            <input type="email" class="form-control my-select pi-input" id="exampleFormControlInput1"
+                                placeholder="ejemplo@gmail.com">
+                        </div>
+                        <div class="mb-2 ">
+                            <label for="exampleFormControlInput1" class="form-label mb-0  fw-600 fs-7   a-color2">Crear
+                                contraseña</label>
+                            <div class="my-select d-flex px-2 justify-content-between border-div ">
+                                <div>
+                                    <input type="password" class="form-control input-border" id="myInput"
+                                        placeholder="**********">
+                                </div>
+                                <div><i onclick="myFunction(id)" id="eye1" class="fa-regular fa-eye-slash"></i></div>
+                            </div>
+                            <div class="form-text fs-8">Debe contener mínimo 6 caracteres y un número.</div>
+                        </div>
+                        <div class="mb-2">
+                            <label for="exampleFormControlInput1"
+                                class="form-label mb-0  fw-600 fs-7 a-color2">Confirmar contraseña</label>
+                            <div class="my-select d-flex px-2 justify-content-between border-div ">
+                                <div>
+                                    <input type="password" class="form-control input-border " id="myInput2"
+                                        placeholder="**********">
+                                </div>
+                                <div class=""><i onclick="myFunction2(id)" id="eye2"
+                                        class="fa-regular fa-eye-slash"></i></div>
+                            </div>
+                            <div class="form-text text-danger">Las contraseñas no coinciden.</div>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label a-color2" for="flexCheckChecked">
+                                <p class="mb-0 fs-7">Al registrarte, aceptas nuestros</p>
+                                <p class="mb-0 fs-7 fw-600">Términos y Condiciones y <br>
+                                    Politicas de Datos.</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="pt-2 d-flex flex-column gap-2">
+                        <a href="address.html"><button class="btn-global fw-500" type="button">Continuar</button></a>
+                    </div>
+                    <!-- <div class=" pt-3">
+                    <p class="mb-0 fw-500 fs-7">bcjhdbcjbvbdjvbdjbjvbej? <a href="" class="text-decoration-none a-color"> cyvcyevew</a></p>
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    function myFunction(id) {
+        var x = document.getElementById("myInput");
+        let i = document.getElementById(id);
+        i.classList.toggle("fa-eye");
+
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+
+        }
+    }
+    function myFunction2(id) {
+        var y = document.getElementById("myInput2");
+        let i = document.getElementById(id);
+        i.classList.toggle("fa-eye");
+
+        if (y.type === "password") {
+            y.type = "text";
+        } else {
+            y.type = "password";
+        }
+    }
+</script>
+
+</html>

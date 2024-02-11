@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24.254 24">
+  <g id="MDI_heart-outline" data-name="MDI / heart-outline" transform="translate(0.13)">
+    <g id="Boundary" fill="none" stroke="#666" stroke-width="2" opacity="0">
+      <rect width="24" height="24" stroke="none"/>
+      <rect x="1" y="1" width="22" height="22" fill="none"/>
+    </g>
+    <path id="Icon_ionic-ios-share-alt" data-name="Icon ionic-ios-share-alt" d="M26.552,14.237,18.379,6.884a.426.426,0,0,0-.324-.134c-.255.011-.579.184-.579.446v3.688a.241.241,0,0,1-.209.228c-8.127,1.2-11.55,7.047-12.761,13.119-.046.24.29.462.446.273a14.96,14.96,0,0,1,12.28-5.983.28.28,0,0,1,.243.267v3.621a.5.5,0,0,0,.84.3l8.231-7.481a.6.6,0,0,0,.2-.468A.73.73,0,0,0,26.552,14.237Z" transform="translate(-3.626 -3.662)" fill="none" stroke="#1b1559" stroke-width="2"/>
+  </g>
+</svg>

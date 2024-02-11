@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-color">
+    <section class=" ">
+        <div>
+            <div class="d-flex bg-color1 align-items-center p-3">
+                <div class="d-flex align-items-center ps-3">
+                    <div class="text-white pointer fw-600">Mi Perfil</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="p-3 bg-white">
+            <div class="d-flex justify-content-between align-items-end">
+                <div class="d-flex align-items-center">
+                    <div class="position-r">
+                        <div>
+                            <img src="assets/images/images.jfif" class="img-top-10" alt="">
+                        </div>
+                        <div class="pencil-div pointer">
+                            <label for="id-01">
+                                <input type="file" id="id-01" class="d-none">
+                                <img src="assets/images/pencil.png" class="pointer" alt="">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column ms-2">
+                        <p class="a-color2  fw-600 mb-0">Nombre Apellido</p>
+                        <p class="mb-0 fs-7 fw-500 text-muted a-color2 mt-1 ">RUT: 123132132132</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="mb-0 mt-0 a-color5">
+
+        <div class="p-3 bg-white">
+            <div class="d-flex gap-3 align-items-center">
+                <div>
+                    <i class="fa-regular fa-circle-user a-color2 fs-5"></i>
+                </div>
+                <a href="peronalinformation.html" class="text-decoration-none">
+                    <div class="a-color2 fs-6 fw-500 pointer">Información personal</div>
+                </a>
+            </div>
+        </div>
+
+        <hr class="mb-0 mt-0 a-color5">
+
+        <div class="p-3 bg-white">
+            <div class="d-flex gap-3 align-items-center">
+                <div>
+                    <i class="fa-solid fa-lock a-color2 fs-5"></i>
+                </div>
+                <a href="verifyyouridentity.html" class="text-decoration-none">
+                    <div class="a-color2 fw-500 pointer">Actualizar contraseña</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="d-flex justify-content-center align-items-end ">
+        <button data-bs-toggle="modal" href="#exampleModalToggle" class="mybtn left-right-none btn-global-4 fw-500">Cerrar Sesión</button>
+    </div>
+
+
+
+    <section class="fixed-bottom bg-light">
+        <div class="d-flex justify-content-around pb-2 p-3">
+            <a href="shop.html">
+                <div><i class="fa-solid fa-house text-muted  pointer"></i></div>
+            </a>
+            <a href="search.html" class="text-decoration-none">
+                <div><i class="fa-solid fa-magnifying-glass text-muted pointer"></i></div>
+            </a>
+            <a href="notification.html">
+                <div><i class="fa-solid text-muted position-r fa-bell pointer text-muted"></i> <span
+                        class="circle-counter-1">15</span></div>
+            </a>
+            <a href="myshopping.html">
+                <div><i class="fa-solid fa-list-ul pointer  text-muted"></i></div>
+            </a>
+            <a href="profile.html">
+                <div><i class="fa-solid fa-user pointer a-color "></i></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- modal -->
+
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="main d-flex justify-content-between">
+                        <div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="f-para fs-6 heading-theme fw-600  mb-0">Cerrar Sesión</p>
+                    </div>
+
+                    <hr class="a-color5 mt-2">
+
+                    <!-- <div class="d-flex justify-content-center">
+                    <div><i class="fa-regular modal2-check fa-circle-check"></i></div>
+                </div> -->
+                    <div>
+                        <p class=" heading-theme fw-500 fs-7 pt-2">¿Estás seguro de cerrar sesión?</p>
+                    </div>
+
+                    <a href=""> <button class="btn-global-7 fs-6 fw-600 mt-2">No</button></a>
+                    <a href="login.html"> <button class="btn-global-8 fs-6  mt-2">Sí</button></a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="assets/js/index.js"></script>
+
+</html>

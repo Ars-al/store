@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product detail</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <section class="bg-color2">
+        <div>
+            <div class="d-flex justify-content-between bg-color1 p-3">
+                <div class="d-flex align-items-center ">
+                    <a href="javascript:history.back()"><i class="fa-solid fa-arrow-left fs-5 text-light"></i></a>
+                </div>
+                <a href="search.html">
+                    <div class="me-2"><i class="fa-solid text-light fa-magnifying-glass"></i></div>
+                </a>
+            </div>
+
+            <div class="top-bar p-3">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="img-round-fill"> 
+                            <img src="assets/images/post-04.png" class="w-100" alt="">
+                        </div>
+                        <div class="d-flex flex-column align-items-start">
+                            <p class="a-color2 fs-5 fw-700 mb-0 ">Plaza vea </p>
+                            <p class=" form-text fs-9 text-muted my-1">Supermercado</p>
+                            <div class="star-div gap-2 justify-content-around d-flex fs-7"><i
+                                    class="fa-solid fa-star"></i>4.5</div>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex gap-3 align-items-end">
+                        <span><i onclick="heartFunction(id)" id="fav"
+                                class="fa-regular fa-heart icon-style pointer"></i></span>
+                        <span class="pointer">
+                            <img src="assets/images/svg/share.svg" class="icon-style" alt="">
+                            <!-- <i class="fa-solid fa-share icon-style pointer"></i> -->
+                        </span>
+                        <!-- <i onclick="myFunction()" class="fa fa-thumbs-up"></i> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="d-flex gap-lg-3 gap-2 position-r overflow-hidden  p-lg-3 p-1 a-color2 fw-500" id="myBtnContainer">
+            <div class="pb-2 border-text pointer font-resp category-1-btn" onclick="filterSelection('all')">All
+                Categoría </div>
+            <div class="pb-2  pointer font-resp category-1-btn" onclick="filterSelection('cars')">Categoría 1
+            </div>
+            <div class="pb-2 text-muted pointer font-resp category-2-btn" onclick="filterSelection('animals')">Categoría
+                2</div>
+            <div class="pb-2 text-muted pointer font-resp category-3-btn" onclick="filterSelection('fruits')">Categoría
+                3</div>
+            <div class="pb-2 text-muted pointer font-resp category-4-btn" onclick="filterSelection('colors')">Categoría
+                4</div>
+            <!-- <div class="pb-2 text-muted pointer font-resp category-5-btn">Categoría 5</div> -->
+            <span class="hr-class"> </span>
+        </div>
+    </section>
+
+    <section class="p-3 pb-0 item category-1">
+        <h4 class="a-color2 fw-600 filterDiv cars">Categoría 1</h4>
+        <div class="d-flex flex-wrap justify-content-lg-start justify-content-center gap-3">
+            <div class="width-div position-r filterDiv cars pt-2">
+                <div class=" position-r">
+                    <img data-bs-toggle="modal" data-bs-target="#exampleModal" src="assets/images/pro-01.png"
+                        class="img-p6" alt="">
+                    <div class="page-6ab">
+                        <p class="text-white fw-500 mb-0">10% dcto</p>
+                    </div>
+                </div>
+
+                <p class="a-color2 fw-500 pt-2 mb-0">Título de producto</p>
+                <div class="d-flex justify-content-between">
+                    <div class="a-color2">
+                        <p class="mb-0 fs-7">Categoría</p>
+                        <p class="fw-500">35$</p>
+                    </div>
+                    <div class="icon-div-2 pointer" onclick="cartfun()"  id="cart-1" >
+                        <!-- <img src="assets/images/svg/chart-1.svg" class="ms-1 d-none " id="img-1" alt="">
+                        <img src="assets/images/svg/chart-2.svg" class="ms-1" id="img-2" alt=""> -->
+                        <!-- <i  class="fa-solid fa-basket-shopping text-light"></i> -->
+                        <i class="fa-solid fa-cart-shopping fa-cart-plus text-light" id="icons"></i>
+                          <!-- <i class="fa-solid "></i> -->
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="heart-div"><i onclick="heartFunction(id)" id="fav1"
+                        class="fa-regular fa-heart icon-style pointer"></i></div>
+            </div>
+            <div class="width-div position-r filterDiv cars pt-2">
+                <div class=" position-r">
+                    <img data-bs-toggle="modal" data-bs-target="#exampleModal" src="assets/images/pro-02.png"
+                        class="img-p6" alt="">
+                </div>
+
+                <p class="a-color2 fw-500 pt-2 mb-0">Título de producto</p>
+                <div class="d-flex justify-content-between">
+                    <div class="a-color2">
+                        <p class="mb-0 fs-7">Categoría</p>
+                        <p class="fw-500">35$</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-basket-shopping icon-6"></i>
+                    </div>
+                </div>
+
+                <div class="heart-div"><i onclick="heartFunction(id)" id="fav3"
+                        class="fa-regular fa-heart icon-style pointer"></i></div>
+            </div>
+            <div class="width-div position-r filterDiv cars pt-2">
+                <div class=" position-r">
+                    <img data-bs-toggle="modal" data-bs-target="#exampleModal" src="assets/images/pro-03.png"
+                        class="img-p6" alt="">
+                </div>
+
+                <p class="a-color2 fw-500 pt-2 mb-0">Título de producto</p>
+                <div class="d-flex justify-content-between">
+                    <div class="a-color2">
+                        <p class="mb-0 fs-7">Categoría</p>
+                        <p class="fw-500">35$</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-basket-shopping icon-6"></i>
+                    </div>
+                </div>
+
+                <div class="heart-div"><i onclick="heartFunction(id)" id="fav2"
+                        class="fa-regular fa-heart icon-style pointer"></i></div>
+            </div>
+            <div class="width-div position-r pt-2 filterDiv cars"> 
+                <div class=" position-r">
+                    <img data-bs-toggle="modal" data-bs-target="#exampleModal" src="assets/images/pro-04.png"
+                        class="img-p6" alt="">
+                </div>
+
+                <p class="a-color2 fw-500 pt-2 mb-0">Título de producto</p>
+                <div class="d-flex justify-content-between">
+                    <div class="a-color2">
+                        <p class="mb-0 fs-7">Categoría</p>
+                        <p class="fw-500">35$</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-basket-shopping icon-6"></i>
+                    </div>
+                </div>
+
+                <div class="heart-div"><i   onclick="heartFunction(id)" id="fav4" class="fa-regular fa-heart icon-style pointer"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-3 pb-0 item category-2">
+        <h4 class="a-color2 fw-600 filterDiv  animals">Categoría 2</h4>
+        <div class="d-flex flex-wrap justify-content-lg-start justify-content-center gap-3">
+            <div class="width-div position-r pt-2 filterDiv  animals">
+                <div class=" position-r">
+                    <img data-bs-toggle="modal" data-bs-target="#exampleModal" src="assets/images/pro-02.png"
+                        class="img-p6" alt="">
+                </div>
+
+                <p class="a-color2 fw-500 pt-2 mb-0">Título de producto</p>
+                <div class="d-flex justify-content-between">
+                    <div class="a-color2">
+                        <p class="mb-0 fs-7">Categoría</p>
+                        <p class="fw-500">35$</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-basket-shopping icon-6"></i>
+                    </div>
+                </div>
+
+                <div class="heart-div"><i onclick="heartFunction(id)" id="fav5" class="fa-regular fa-heart icon-style pointer"></i></div>
+            </div>
+            <div class="width-div position-r pt-2 filterDiv  animals">
+                <div class=" position-r">
+                    <img data-bs-toggle="modal" data-bs-target="#exampleModal" src="assets/images/pro-03.png"
+                        class="img-p6" alt="">
+                </div>
+
+                <p class="a-color2 fw-500 pt-2 mb-0">Título de producto</p>
+                <div class="d-flex justify-content-between">
+                    <div class="a-color2">
+                        <p class="mb-0 fs-7">Categoría</p>
+                        <p class="fw-500">35$</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-basket-shopping icon-6"></i>
+                    </div>
+                </div>
+
+                <div class="heart-div"><i onclick="heartFunction(id)" id="fav6"  class="fa-regular fa-heart icon-style pointer"></i></div>
+            </div>
+            <div class="width-div position-r pt-2 filterDiv  animals">
+                <div class=" position-r">
+                    <img data-bs-toggle="modal" data-bs-target="#exampleModal" src="assets/images/pro-04.png"
+                        class="img-p6" alt="">
+                </div>
+
+                <p class="a-color2 fw-500 pt-2 mb-0">Título de producto</p>
+                <div class="d-flex justify-content-between">
+                    <div class="a-color2">
+                        <p class="mb-0 fs-7">Categoría</p>
+                        <p class="fw-500">35$</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-basket-shopping icon-6"></i>
+                    </div>
+                </div>
+
+                <div class="heart-div"><i class="fa-regular fa-heart icon-style pointer"></i></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="p-3 pb-0 item category-3">
+        <h4 class="a-color2 fw-600 filterDiv  fruits">Categoría 3</h4>
+        <div class="d-flex flex-wrap justify-content-lg-start justify-content-center gap-3">
+            <div class="width-div position-r filterDiv  fruits pt-2">
+                <div class=" position-r">
+                    <img data-bs-toggle="modal" data-bs-target="#exampleModal" src="assets/images/pro-01.png"
+                        class="img-p6" alt="">
+                </div>
+
+                <p class="a-color2 fw-500 pt-2 mb-0">Título de producto</p>
+                <div class="d-flex justify-content-between">
+                    <div class="a-color2">
+                        <p class="mb-0 fs-7">Categoría</p>
+                        <p class="fw-500">35$</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-basket-shopping icon-6"></i>
+                    </div>
+                </div>
+
+                <div class="heart-div"><i class="fa-regular fa-heart icon-style pointer"></i></div>
+            </div>
+            <div class="width-div position-r filterDiv  fruits pt-2">
+                <div class=" position-r">
+                    <img data-bs-toggle="modal" data-bs-target="#exampleModal" src="assets/images/pro-02.png"
+                        class="img-p6" alt="">
+                </div>
+
+                <p class="a-color2 fw-500 pt-2 mb-0">Título de producto</p>
+                <div class="d-flex justify-content-between">
+                    <div class="a-color2">
+                        <p class="mb-0 fs-7">Categoría</p>
+                        <p class="fw-500">35$</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-basket-shopping icon-6"></i>
+                    </div>
+                </div>
+
+                <div class="heart-div"><i class="fa-regular fa-heart icon-style pointer"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-3 pb-5 mb-5 item category-4">
+        <h4 class="a-color2 fw-600 filterDiv colors ">Categoría 4</h4>
+        <div class="d-flex flex-wrap  justify-content-lg-start justify-content-center gap-3">
+            <div class="width-div position-r pt-2 filterDiv colors">
+                <div class=" position-r">
+                    <img data-bs-toggle="modal" data-bs-target="#exampleModal" src="assets/images/pro-01.png"
+                        class="img-p6" alt="">
+                </div>
+
+                <p class="a-color2 fw-500 pt-2 mb-0">Título de producto</p>
+                <div class="d-flex justify-content-between">
+                    <div class="a-color2">
+                        <p class="mb-0 fs-7">Categoría</p>
+                        <p class="fw-500">35$</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-basket-shopping icon-6"></i>
+                    </div>
+                </div>
+
+                <div class="heart-div"><i class="fa-regular fa-heart icon-style pointer"></i></div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <section class="fixed-bottom bg-white p-3 mt-5">
+        <div class="d-flex justify-content-between">
+            <div class="a-color2">
+                <h6 class="fs-7 fw-600 mb-1">Productos (10)</h6>
+                <h5 class="fw-700">$99.020.000</h5>
+            </div>
+            <div>
+                <a href="shopingcart.html"><button class="btn-global-2 fw-500" type="button">Ver carrito</button></a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- modal -->
+    <div class="modal " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="main d-flex justify-content-between">
+                        <div>
+                            <button type="button" class="btn-close-sep" data-bs-dismiss="modal" aria-label="Close"><i
+                                    class="fa-solid fa-xmark"></i></button>
+
+                        </div>
+                        <div><i class="fa-solid fa-heart"></i></div>
+                    </div>
+                    <div class="image">
+                        <div class="">
+                            <img src="assets/images/oil bottle.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+
+
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+                    <!-- <div class="red-div"><p class="text-white text-center">10% dcto</p></div> -->
+                    <div>
+                        <p class="f-para heading-theme fw-700 text-center">Miraflores-Aciete Miraflores <br>Maravilla
+                            5x1
+                            Lt.</p>
+
+                    </div>
+                    <hr>
+
+                    <div>
+                        <h6 class="text-theme fw-700">Description</h6>
+                        <p class="text-theme fw-500 fs-7">Aceite Miraflores Maravilla 5x1 Lt. </p>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <div class="div1">
+                            <p class="text-theme fw-500">Precio Unidad</p>
+                        </div>
+                        <div class="div2">
+                            <p class="heading-theme fw-800">$8.500</p>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="div1">
+                            <p class="text-theme fw-500">Total</p>
+                        </div>
+                        <div class="div2">
+                            <p class="heading-theme fw-800">$8.600</p>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="counterbg">
+
+                            <button class="btn-global subtract" id="minus2">-</button>
+                            <span class="pe-2 ps-2" id="increament2">1</span>
+                            <button class="btn-global plus text-white fw-600 heading-theme fw-600" id="plus2">+</button>
+
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div>
+                                <button class="Agregar text-white text-center">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="assets/js/index.js"></script>
+<script>
+
+
+
+    filterSelection("all")
+    function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+    }
+
+    function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+        }
+    }
+
+    function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+        }
+        element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("font-resp");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("border-text");
+            current[0].className = current[0].className.replace(" border-text", "");
+            this.className += " border-text";
+        });
+    }
+
+
+</script>
+
+</html>
